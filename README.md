@@ -16,9 +16,11 @@ Authenticate to your Rancher cluster using the Rancher CLI.
 
 Build the docker image (you can use `./build.sh`)
 
-> Optional: Edit the `get-all-child-counts.sh` script and change the `grep` filter to target the desired Rancher worker nodes
+> Optional: Edit the `get-cluster-child-process-counts.sh` script and change the `grep` filter to target the desired Rancher worker nodes
 
-Run the `get-all-child-counts.sh` script to get counts across all worker nodes.
+Run the `get-cluster-child-process-counts.sh` script to get counts across all worker nodes.
+
+Run the `get-node-child-process-counts.sh NODE` script (replacing NODE with a rancher node name) to get counts for a specific node.
 
 ## TODO
 

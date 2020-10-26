@@ -2,10 +2,10 @@ FROM rancher/cli2:latest
 
 WORKDIR /root
 
-COPY get-pod-child-count.sh .
-COPY start.sh .
+COPY get-child-process-counts.sh .
+COPY docker-entrypoint.sh .
 
-RUN chmod +x get-pod-child-count.sh
-RUN chmod +x start.sh
+RUN chmod +x get-child-process-counts.sh
+RUN chmod +x docker-entrypoint.sh
 
-ENTRYPOINT [ "./start.sh" ]
+ENTRYPOINT [ "./docker-entrypoint.sh" ]

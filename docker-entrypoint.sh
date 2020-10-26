@@ -6,4 +6,4 @@ Host *
   
   UserKnownHostsFile=/dev/null" >> /etc/ssh/ssh_config
 
-rancher ssh $1 bash -s < get-pod-child-count.sh
+rancher ssh $1 bash -s < get-child-process-counts.sh
