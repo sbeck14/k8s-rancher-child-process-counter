@@ -7,6 +7,8 @@ IFS=$'\n'      # Change IFS to new line
 NODES_ARR=($NODES)
 IFS=$SAVEIFS   # Restore IFS
 
+printf '%-8s\t%-50s\t%s\n' "PID" "NAME" "COUNT"
+
 for node in "${NODES_ARR[@]}"
 do
   echo $node
