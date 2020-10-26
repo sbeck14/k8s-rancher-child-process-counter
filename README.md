@@ -22,6 +22,10 @@ Run the `get-cluster-child-process-counts.sh` script to get counts across all wo
 
 Run the `get-node-child-process-counts.sh NODE` script (replacing NODE with a rancher node name) to get counts for a specific node.
 
+## Prebuilt Docker Image
+
+https://hub.docker.com/r/sbeck14/k8s-rancher-child-process-counter
+
 ## TODO
 
 Better output format? Probably not going to spend any more time on this
