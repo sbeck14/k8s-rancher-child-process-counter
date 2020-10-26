@@ -12,5 +12,5 @@ printf '%-8s\t%-50s\t%s\n' "PID" "NAME" "COUNT"
 for node in "${NODES_ARR[@]}"
 do
   echo $node
-  docker run --rm -it -v ~/.rancher/cli2.json:/root/.rancher/cli2.json rancher-ssh-child-count $node
+  docker run --rm -it -v ~/.rancher/cli2.json:/root/.rancher/cli2.json k8s-rancher-child-process-counter $node
 done

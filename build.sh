@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t rancher-ssh-child-count .
+docker build -t k8s-rancher-child-process-counter .
